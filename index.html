@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="listagemPokemons/css/reset.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+       <a href="https://pokemondb.net/sprites">
+            <img src="listagemPokemons/imagens/pokeball-png-45332.png" class="logo">
+       </a> 
+       <button id="alterarTema">
+            <img src="listagemPokemons/imagens/sol.png" class="imagem-botao" alt="imagem do sol">
+       </button>
+    </header>
+    <script>
+        // Função para alternar entre o modo claro e o modo escuro
+        function alterarTema() {
+            const corpo = document.body;
+            corpo.classList.toggle('modo-escuro');
+        }
+
+        // Adicionar um ouvinte de evento ao botão
+        const modoEscuroBtn = document.getElementById('alterarTema');
+        modoEscuroBtn.addEventListener('click', alterarTema);
+    </script>
+    <main>
+        <ul class="listaPokemon">
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Bulbasaur</span>
+                    <span>#001</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/bulbasaur.gif" alt="bulbasaur" title="belo bulbasaur" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">veneno</li>
+                </ul>
+                <p class="descricao">Texto do bulbasaur</p>
+            </li>
+
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Ivysaur</span>
+                    <span>#002</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/ivysaur.gif" alt="bulbasaur" title="Ivysaur" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">veneno</li>
+                </ul>
+                <p class="descricao">Texto do Ivysaur</p>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Venosaur</span>
+                        <span>#003</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/venusaur.gif" alt="bulbasaur" title="Venosaur" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">veneno</li>
+                    </ul>
+                    <p class="descricao">Texto do Venosaur</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Charmander</span>
+                        <span>#004</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/charmander.gif" title="Charmander" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do Charmander</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Charmeleon</span>
+                        <span>#005</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/charmeleon.gif" title="Charmeleon" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                       
+                    </ul>
+                    <p class="descricao">Texto do charmeleon</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>charizard</span>
+                        <span>#006</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/charizard.gif" title="charizard" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do charizard</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Squirtle</span>
+                        <span>#007</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/squirtle.gif" title="Squirtle" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo agua">Àgua</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do squirtle</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>wartortle</span>
+                        <span>#008</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/wartortle.gif" title="wartortle" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo agua">Àgua</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do wartortle</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Blastoise</span>
+                        <span>#009</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/blastoise.gif" title="Blastoise" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo agua">Àgua</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do blastoise</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Caterpie</span>
+                        <span>#010</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/caterpie.gif" title="Caterpie" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">veneno</li>
+                    </ul>
+                    <p class="descricao">Texto do caterpie</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Cyndaquil</span>
+                        <span>#011</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/cyndaquil.gif" title="Cyndaquil" class="gif">
+    
+                    <ul class="tipo tipos">
+                        <li class="tipo fogo">fogo</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do quilava</p>
+                </li>
+
+                <li class="cartaoPokemon">
+                    <div class="informacoes">
+                        <span>Quilava</span>
+                        <span>#013</span>
+                    </div>
+    
+                    <img src="listagemPokemons/imagens/quilava.gif" title="Quilava" class="gif">
+    
+                    <ul class="tipos">
+                        <li class="tipo fogo">fogo</li>
+                        
+                    </ul>
+                    <p class="descricao">Texto do quilava</p>
+                </li>
+            </li>
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Typhlosion</span>
+                    <span>#014</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/typhlosion.gif" title="typhlosion" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo fogo">fogo</li>
+                    
+                </ul>
+                <p class="descricao">Texto do typhlosion</p>
+            </li>
+
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Pikachu</span>
+                    <span>#015</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/pikachu.gif" title="pikachu" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo eletrico">eletrico</li>
+                    
+                </ul>
+                <p class="descricao">Texto do Pikachu</p>
+            </li>
+
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Raichu</span>
+                    <span>#016</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/raichu.gif" title="Raichu" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo eletrico">eletrico</li>
+                    
+                </ul>
+                <p class="descricao">Texto do raichu</p>
+            </li>
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Glaceon</span>
+                    <span>#017</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/glaceon.gif" title="glaceon" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo gelo">gelo</li>
+                    
+                </ul>
+                <p class="descricao">Texto do Glaceon</p>
+            </li>
+
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Snorlax</span>
+                    <span>#018</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/snorlax.gif" title="snorlax" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo normal">normal</li>
+                    
+                </ul>
+                <p class="descricao">Texto do snorlax</p>
+            </li>
+
+            <li class="cartaoPokemon">
+                <div class="informacoes">
+                    <span>Hydreigon</span>
+                    <span>#019</span>
+                </div>
+
+                <img src="listagemPokemons/imagens/hydreigon.gif" title="hydreigon" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo dark">dark</li>
+                    <li class="tipo dragao">dragão</li>
+                </ul>
+                <p class="descricao">Texto do hydreigon</p>
+            </li>
+        </ul>
+    </main>
+
+</body>
+</html>
